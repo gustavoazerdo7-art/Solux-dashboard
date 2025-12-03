@@ -1,5 +1,5 @@
 export function getAbsoluteUrl(): string {
-  const defaultUrl = 'http://localhost:3000';
+  const defaultUrl = 'https://solux-dashboard.vercel.app';
 
   if (process.env.APP_URL != null) return process.env.APP_URL;
 
