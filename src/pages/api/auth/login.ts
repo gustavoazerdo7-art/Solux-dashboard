@@ -10,7 +10,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const url =
     'https://discord.com/api/oauth2/authorize?' +
     new URLSearchParams({
-      client_id: 1445782617503961129,
+      client_id: CLIENT_ID, // <-- aqui
       redirect_uri: `${getAbsoluteUrl()}/api/auth/callback`,
       response_type: 'code',
       scope: 'identify guilds',
